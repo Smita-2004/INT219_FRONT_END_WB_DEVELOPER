@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #myDIV{
+            margin-top:10px;
+            height: 200px;
+            width: 200px;
+            overflow: auto;
+        }
+        #content{
+            height: 2000px;
+            width: 2000px;
+            padding: 10px;
+            background-color: rgb(182, 243, 243);
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <div id="myDIV">
+        <div id="content">
+            <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem velit voluptates dolore? -->
+            <img src="image1.jpeg">
+        </div>
+    </div>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById("content")
+        let y= element.scrollHeight;
+        let x= element.scrollWidth;
+// document.getElementById("demo").innerHTML="Height: "+y+" Width: "+x;
+    </script>
+</body>
+</html>
